@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="floating-hearts" id="hearts-container"></div>
+    
+    <div class="container">
+        <div class="card">
+            <div class="envelope">
+                <div class="envelope-flap"></div>
+                <div class="envelope-body"></div>
+            </div>
+            
+            <div class="content">
+                <h1 class="title">Dear My Love</h1>
+                <div class="heart-animation">💖</div>
+                <p class="message">Every moment with you feels like a beautiful dream come true...</p>
+                
+                <div class="question-section" id="question-section">
+                    <h2 class="question">Will You Be My Valentine?</h2>
+                    <div class="buttons">
+                        <button class="btn btn-yes" id="yes-btn" onclick="sayYes()">Yes! 💕</button>
+                        <button class="btn btn-no" id="no-btn" onclick="sayNo()">No</button>
+                    </div>
+                </div>
+
+                <div class="alternative-options" id="alternative-options" style="display: none;">
+                    <p class="alt-question" id="alt-question">Are you sure? 🥺</p>
+                    <div class="buttons">
+                        <button class="btn btn-yes" id="alt-yes-btn" onclick="sayYes()">Yes Please! 💝</button>
+                        <button class="btn btn-no" id="alt-no-btn" onclick="sayNoAgain()">Still No</button>
+                    </div>
+                </div>
+
+                <div class="success-message" id="success-message" style="display: none;">
+                    <div class="fireworks" id="fireworks"></div>
+                    <h2 class="success-title">You Made Me The Happiest Person! 🎉</h2>
+                    <p class="success-text">I promise to make this Valentine's Day unforgettable! 💕</p>
+                    
+                    <!-- Flower Images -->
+                    <div class="flower-container">
+                        <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?w=300&h=300&fit=crop" alt="Roses" class="flower-img left-flower">
+                        <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=300&h=300&fit=crop" alt="Flowers" class="flower-img right-flower">
+                    </div>
+
+                    <!-- Romantic Note -->
+                    <div class="romantic-note">
+                        <div class="note-content">
+                            <p class="love-letter">
+                                This day might be the love day but I guessed with you I might celebrate it everyday. 
+                                Moon might be shine bright but the way you smile seem brighter. 
+                                The eyes of yours feels like the deep with sparkling water where drowning feels like relief. 
+                                Sharing some words with you becoming my habit. 
+                                The day might passed the time may flies the feeling that I have towards you stay still like before will be staying like that till the time stop passing for me.
+                            </p>
+                            <p class="closing">Happy Valentine Day</p>
+                            <span class="signature">— Yours Forever</span>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-restart" onclick="resetPage()">Start Over 💫</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
